@@ -1,0 +1,1313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+header {
+    background-image: url(images/header/bgHeader.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.logoAndNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5% 2% 0 1%;
+}
+.imgTitleTextAndBtn {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.titleTextAndBtn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top: 11%;
+    margin-right: 4%;
+}
+
+/*Логотип*/
+
+.logo p {
+    font-family: "intro-regular";
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+/*Навигация*/
+nav {
+    flex-basis: 53%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav li {
+    text-align: center;
+}
+nav li a {
+    font-family: "open_sans_bold";
+    font-size: .8vw;
+    color: white;
+    text-transform: uppercase;
+    padding: .1vw .6vw .1vw .6vw;
+}
+nav ul li a:link, nav ul li a:visited {
+    text-decoration: none;   
+}
+nav ul li a:hover {
+    cursor: pointer;
+    border: solid .13vw white;
+    border-radius: 1vw;
+    padding: .1vw .5vw .1vw .5vw;
+}
+.contanerImgHeader {
+    margin-left: 3%;
+}
+.imgHeader {
+    width: 30vw; 
+}
+/*Заголовок хедера и текст под ним*/
+
+.titleHeader,.textUnderTitleHeader {
+    color: rgb(255, 255, 255);
+    font-family: "open_sans_light";
+}
+.titleHeader {
+    font-size: 1.5vw;
+}
+.textUnderTitleHeader {
+    font-size: 1vw;
+    line-height: 1.5vw;
+    padding-top: 5%;
+}
+
+/*Кнопка хедера*/
+
+.btnHeader {
+    margin-top: 10%;
+}
+.btnDownLoadApp {
+    background-color: #7954b6;
+    font-family: "open_sans_bold";
+    font-size: 1vw;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2vw;
+    border: none;
+    height: 3.5vw;
+    width: 14vw;
+}
+.btnDownLoadApp:hover {
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: solid .2vw white;
+    border-radius: 2vw;
+    padding: 0 1vw 0 1vw;
+}
+
+/*Секция Amazing Feature*/
+
+.titleFeatures {
+    font-family: "open_sans_light";
+    color: #7954b6;
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 2.5vw;
+    text-align: center;
+}
+.textUnderTitleFeatures {
+    font-family: "open_sans_light";
+    color: #565656;
+    font-size: 1vw;
+    line-height: 1.7vw;
+    text-align: center;
+    margin-bottom: 15%; 
+}
+.fadeAndTable {
+    position: relative;
+    margin-bottom: 5%;
+}
+.contanerFade {
+    width: 50%;
+    height: 38vw;
+    position: relative; 
+}
+.contanerTable {
+    width: 35%;
+    height: 38vw;
+    position: absolute;
+    top: 0;
+    right: 15%;  
+}
+.fade {
+    position: relative;
+    
+}
+
+/*Стрелки Fade слайда*/
+
+
+.fade>.slick-arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    font-size: 0;
+    background: 0;
+    border: 0;
+    width: 5.1vw;
+    height: 5.1vw;
+}
+.fade>.slick-arrow:hover {
+    cursor: pointer;
+    width: 5.5vw;
+    height: 5.5vw;
+}
+.fade>.slick-arrow.slick-prev {
+    left: 30%;
+    background-image: url(images/features/arrowLeftFeaturesmall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.fade>.slick-arrow.slick-next {
+    left: 84.5%;
+    background-image: url(images/features/artowRightSmall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.card {
+    width: 22vw;
+    height: 17vw;
+    border-radius: .5vw;
+    font-family: "open_sans_regular";
+    margin: 15% 0 20% 40%;
+    padding-top: 3%;
+}
+.bgCard {
+    width: 22vw;
+    height: 17vw;
+    border-radius: .5vw;
+    font-family: "open_sans_regular";
+}
+
+.bgLeftCard {
+    position: absolute;
+    top: 2vw;
+    left: 8vw;
+    z-index: -5;
+    padding-top: 3%;
+}
+.bgRightCard {
+    position: absolute;
+    top: 4vw;
+    left: 28vw;
+    z-index: -10;
+}
+.bgLastCard {
+    position: absolute;
+    top: 15vw;
+    left: 15vw;
+    z-index: -15;
+}
+
+
+/*Верхняя карточка*/
+
+.firstCard {
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 .4vw 1.2vw 0 rgba(221, 221, 221, 1);
+    position: relative;
+    background-color: white;
+    
+}
+
+.pro {
+    text-align: start;
+    text-transform: uppercase;
+    padding: .5% 3% .5%;
+    font-size: 1vw;
+    color: #565656;
+    align-self: flex-start;
+    border: solid .2vw #ededed;
+    border-radius: .7vw;
+    width: 15%;
+    height: 1.7vw;
+    margin-left: 7%;
+}
+
+.firstCard h2 {
+    color: #c9b1ef;
+    font-size: 1.5vw;
+}
+
+.firstCard p {
+    color: #565656;
+    line-height: 1.1vw;
+    font-size: .8vw;
+}
+.hello {
+    margin-top: 3%;
+}
+.contanerImgFirstCard {
+    display: flex;
+    justify-content: center;
+}
+.imgFirstCard {
+    width: 6.3vw; 
+}
+.arrowMiddle {
+    position: absolute;
+    left: 11.5vw;
+    top: 6.9vw;
+    width: 2.3vw;
+}
+
+/*Левая карточка*/
+
+.leftCard {
+    box-shadow: 0 .4vw 1.2vw 0 rgba(130, 130, 130, 1);
+    background-image: url(images/features/imgLeftCard.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: white;
+}
+.contentLeftCard {
+    padding: 53%  5% 5% 5%;
+}
+.contentLeftCard h2 {
+    color: #c9b1ef;
+    font-size: .9vw;
+}
+.contentLeftCard p {
+    font-size: .7vw;
+    color: #565656;
+}
+/*Правая карточка*/
+
+.rightCard {
+    background-image: url(images/features/imgRightCard.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    box-shadow: 0 .4vw 1.2vw 0 rgba(221, 221, 221, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+}
+.contentRightCard {
+    padding: 5% 3% 6% 5%;
+}
+.contentRightCard h2 {
+    color: #c9b1ef;
+    font-size: .9vw;
+}
+.contentRightCard p {
+    font-size: .7vw;
+    color: #565656;
+}
+
+/*Нижняя карточка*/
+
+.lastCard {
+    background-image:url(images/features/imgLastCard.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    box-shadow: .4vw .4vw 1.2vw 0 rgba(130, 130, 130, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    background-color: white;
+}
+
+.contentLasttCard {
+    padding: 0 3% 6% 9%;
+    margin-bottom: 4%;
+}
+.contentLasttCard h2 {
+    color: #c9b1ef;
+    font-size: .9vw; 
+}
+.contentLasttCard p {
+    font-size: .7vw;
+    color: #565656;
+}
+/*Таблица секции Amazing Features*/
+
+.tableFeatures {
+    display: flex;
+    flex-direction: column;
+}
+.rowTableFeatures {
+    display: flex;
+    flex-direction: row;
+}
+.titleAndTextTableFutures {
+    display: flex;
+    flex-direction: column; 
+}
+.imagesAndTableFutures {
+    display: flex;
+}
+.cardsFeatures {
+    flex-basis: 50%;
+}
+.tableFeatures {
+    flex-basis: 35%;
+    margin-top: 6%;
+}
+.titleAndTextFeatures {
+    text-align: center;
+    margin: 5% 31% 2%;
+}
+
+.imgTableFutures {
+    margin: 0 3% 0 17%;
+    flex-basis: 18%;   
+}
+.imgTableFutures img {
+    width: 4.5vw;
+}
+.titleTableFutures {
+    font-family: "open_sans_light";
+    color: #7954b6;
+    font-size: 1.3vw; 
+    margin-bottom: 5%;
+}
+.textTableFutures {
+    font-family: "open_sans_light";
+    color: #565656;
+    font-size: .8vw;
+    margin-bottom: 10%;
+}
+.intrestedInMore {
+    margin-top: 20%;
+}
+.intrestedInMore a {
+    color: #df508f;
+}
+
+/*Секция About AppGayon*/
+
+.aboutAppGayon {
+    background-image: url(images/aboutAppGuyon/bgAboutAppGayon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "open_sans_light";
+}
+.allContentAboutAppGayon {
+    padding: 4% 13% 8% 15%;
+}
+
+.aboutAppGayon h2 {
+    font-size: 2.5vw;
+    margin-bottom: 2%;
+    color: white;
+}
+.aboutAppGayon h2+p {
+    font-size: 1vw;
+    color: #d7d7d7;
+}
+.line {
+    border-top: solid .2vw white;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 7%;
+}
+
+.tableAboutAppGayon {
+    display: flex;
+    flex-direction: column;
+}
+.rowTableAboutAppGayon {
+    display: flex;
+}
+
+.articleTableAboutAppGayon {
+    margin: 8% 8% 0 0;
+}
+
+.titleArticle {
+    margin-bottom: 5%;
+    font-size: 1.3vw;
+    color: white;
+}
+.textArticle {
+    font-size: .84vw;
+    color: #d7d7d7;
+    line-height: 1.2vw;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+/*Секция Video*/
+
+.sectionWithVideo {
+    position: relative;
+}
+.video {
+    position: relative;
+}
+.contanerForVideo {
+    max-width: 100%;
+    padding: 34.778% 0 0 0;
+}
+
+#guysVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.textVideo p {
+    font-family: "open_sans_light";
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top: 49%;
+    left: 55%;
+}
+.iconAndTimeVideo {
+    position: absolute;
+    top: 44%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconVideo {
+    min-width: 5vw;
+    min-height: 5vw;
+}
+.iconVideo img {
+    width: 4vw;
+    
+}
+.timeVideo p {
+    font-family: "open_sans_light";
+    font-size: 1vw;
+    color: white;
+    padding-left: .5vw;
+}
+.iconVideo img:hover {
+    cursor: pointer;
+    width: 4.5vw;
+}
+
+
+/*
+.sectionWithVideo {
+    width: 100%;
+    height: 40vw;
+    position: relative;
+}
+.contanerForVideo {
+   overflow: hidden;
+    width: 100%;
+    height: 40vw;
+}
+video {
+    object-fit: fill;
+    height: 50vw;
+}
+.textVideo p {
+    font-family: "open_sans_light";
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top: 49%;
+    left: 55%;
+}
+.iconAndTimeVideo {
+    position: absolute;
+    top: 44%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconVideo {
+    min-width: 5vw;
+    min-height: 5vw;
+}
+.iconVideo img {
+    width: 4vw;
+    
+}
+.timeVideo p {
+    font-family: "open_sans_light";
+    font-size: 1vw;
+    color: white;
+    padding-left: .5vw;
+}
+.iconVideo img:hover {
+    cursor: pointer;
+    width: 4.5vw;
+}
+*/
+/*Секция Screenshots*/
+
+.allContentScreenshots {
+    position: relative;
+    height: 65vw;
+    margin-top: 5%;
+   
+}
+
+/* Левая сторона секции Screenshots*/
+
+.leftContentScreenshots {
+    width: 32%;
+    padding-top: 5%;
+    position: absolute;
+    top:0;
+    left: 15%;
+}
+.titleAndTextScreenshots {
+    width: 100%;
+}
+
+.tableScreenshots {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.screenshots h2 {
+    font-family: "open_sans_light";
+    color: #7954b6;
+    font-size: 2.5vw;
+    margin-bottom: 5%;
+
+}
+.screenshots h2+p{
+    font-family: "open_sans_light";
+    font-size: 1vw;
+    line-height: 1.2vw;
+    color: #565656;
+    margin-bottom: 35%;
+}
+.screenshots h3 {
+    font-family: "open_sans_regular";
+    color: #7954b6;
+    font-size: 1.3vw;
+    margin-bottom: 6%;
+}
+.screenshots article p{
+    font-family: "open_sans_regular";
+    font-size: .8vw;
+    line-height: 1.2vw;
+    color: #565656;
+    margin-bottom: 15%;
+}
+
+/* Правая сторона секции Screenshots*/
+
+.phone {
+    margin-left: 45%;
+    width: 50%;
+    position: relative;
+    
+}
+.phoneScreenshots {
+    position: absolute;
+    left: 5%;
+    z-index: -5;
+    width: 30vw;
+    height: auto;
+}
+.underPhone {
+    position: absolute;
+    left: 45%;
+    margin-top: 7%;
+    z-index: -10;
+}
+.underPhone img {
+    width: 26vw;
+    height: auto;
+}
+.contentCardScreenshots {
+    box-shadow: 0 .4vw 1.2vw 0 rgba(221, 221, 221, 1);
+    border-radius: 1vw;
+    width: 20.32vw;
+    height: 25vw;
+}
+.imgCardScreenshots {
+    background-repeat: no-repeat;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    width: 20.32vw;
+    height: 14.93vw;
+}
+.imgCardScreenshotsLeft {
+    background-image: url(images/screenshots/bgCardPhone.png);
+    background-size: cover;
+}
+.imgCardScreenshotsRight {
+    background-image: url(images/features/imgRightCard.png);
+    background-size: contain;
+}
+.imgCardScreenshotsLast {
+    background-image: url(images/features/imgLastCard.png);
+    background-size: contain;
+}
+.textCardScreenshots {
+    margin-top: 11%;
+    margin-left: 7%;  
+}
+#textCardScreenshotsFirst>h2 {
+    margin: 0;
+    color: #c9b1ef;
+    font-size: 1.5vw;
+    font-family: "open_sans_regular";
+    padding-bottom: 5%;
+    padding-top: 10%; 
+}
+.textCardScreenshots h2 {
+    color: #8e5edd;
+    font-size: 1vw;
+    font-family: "open_sans_regular";
+    padding-bottom: 1%;
+}
+.textCardScreenshots h2+p {
+    font-size: .8vw;
+    line-height: 1.3vw;
+    color: #595959;
+    font-family: "open_sans_regular";
+    width: 80%; 
+    padding-bottom: 12%;
+}
+#textCardScreenshotsFirst p, #textCardScreenshotsFirst h2+p {
+    font-size: .8vw;
+    line-height: 1.3vw;
+    color: #595959;
+    font-family: "open_sans_regular";
+    width: 100%;
+    text-align: center;
+}
+.contanerFirstCardScreenshots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+#yogyakartaIndonesia {
+    margin-bottom: 0;
+}
+.circleImg {
+    width: 7vw;
+}
+
+.contanerFadeScreenshots {
+    width: 50%;
+    height: 38vw;
+    position: absolute;
+    left: 15%;
+    margin-top: 30%;
+}
+
+/* Точки (булиты) */
+
+.fadeScreenshots>.slick-dots{
+    display: flex;
+    width: 7vw;
+    justify-content: space-around;
+    position: absolute;
+    top: 35vw;
+    left: 25vw;
+} 
+.fadeScreenshots>.slick-dots li {
+    background-color: #e8e8e8;
+    width: .7vw;
+    height: .7vw;
+    border-radius: 50%;
+}
+.fadeScreenshots>.slick-dots li:hover {
+    cursor: pointer;
+}
+.fadeScreenshots>.slick-dots button {
+    font-size: 0;
+    border: 0;
+}
+/* Активная точка */ 
+
+.fadeScreenshots>.slick-dots li.slick-active{
+    background-color: #8e5edd;
+} 
+
+
+/*Секция Pricing Packages*/
+
+.titleTextAndLine h2 {
+    font-size: 2.5vw;
+    font-weight: 100;
+    font-family: "roboto_light";
+    color: #7954b6;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.titleTextAndLine h2+p {
+    font-family: "roboto_light";
+    color: #565656;
+    font-size: 1.1vw;
+    line-height: 1.7vw;
+    text-align: center;  
+}
+
+.linePricingPackages {
+    border-top: solid .2vw #f34791;
+    width: 5%;
+    margin: 3% auto;
+}
+
+.allListsPricingPackages {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 5% 15% 12% 15%;
+}
+
+
+.listpricingPackages {
+    flex-basis: 25%;
+    padding: 5%;
+    box-shadow: 
+    0 .5vw 2vw rgba(0,0,0,0.25), 
+    0 .2vw .4vw rgba(0,0,0,0.22);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    min-width: 19vw;
+    min-height: 40vw;
+}
+.contanerUl {
+    margin: 10% 0 20% 15%;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-family: "open_sans_light";
+    font-size: 1vw;
+    line-height: 3vw;
+    color: rgb(86, 86, 86);
+}
+/*Адаптивные маркеры списка*/
+
+.contanerUl li:before, .passive:before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 1.32vw 1.26vw;
+    width: 1.32vw;
+    height: 1.26vw;
+    margin-right: 10%;
+}
+.contanerUl li:before {
+    background-image: url(images/pricing/listImg.png);
+}
+.contanerUl .passive:before {
+    background-image: url(images/pricing/listImgPassive.png);
+}
+
+.listpricingPackages h3 {
+    font-family: "open_sans_regular";
+    color: #7954b6;
+    font-size: 1.1vw;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+sup {
+    font-family: "open_sans_semibold";
+    color: #7954b6;
+    font-size: 2.7vw;
+}
+span {
+   font-family: "open_sans_regular";
+    color: #7954b6;
+    font-size: 1.1vw;
+}
+
+.listpricingPackages h3+p {
+    font-family: "open_sans_semibold";
+    color: #7954b6;
+    font-size: 4vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btnPricingPackages {
+    width: 13vw;
+    height: 3.5vw;
+    border-radius: 3vw;
+    background-color: #8e5edd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnPricingPackages a {
+    color: white;
+    font-family: "open_sans_bold";
+    font-size: 1.2vw;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+.btnPricingPackages:hover {
+    cursor: pointer;
+    background-color: white;
+    border: solid #8e5edd .2vw;
+    color: #8e5edd;
+}
+
+.btnPricingPackages:hover>a {
+    color: #8e5edd;
+}
+
+/*Секция Richard Parker*/
+
+.richardParker {
+    margin-bottom: 7%;
+}
+.cardRichardParker {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    border: solid .2vw #e6e6e6;
+    border-radius: .5vw;
+    padding: 2% 3%;
+    margin: 0 auto;
+}
+
+.headerRichardParker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid .2vw #e6e6e6;
+    padding-bottom: 6%;
+}
+.photoRichardParker {
+    background-size: cover;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-image: url(images/richPark/photoRichPark.png);
+}
+.nameEmailAndBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 17vw; 
+}
+.nameRichardParker {
+    font-family: "roboto_regular";
+    color: #7954b6;
+    font-size: 1.6vw;
+}
+.emailRichardParker {
+    font-family: "roboto_regular";
+    color: #9a9a9a;
+    font-size: 1.2vw;
+}
+.btnRichardParker {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid .1vw #8e5edd;
+    border-radius: .4vw;
+    width: 7vw;
+    height: 1.6vw;
+    padding: 0 5%;
+}
+.btnText {
+    font-family: "roboto_regular";
+    font-size: 1vw;
+    font-weight: 100;
+    align-self: center;
+}
+.iconTwitter {
+    width: 1.2vw;
+    
+}
+.headerRichardParker a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.sectionRichardParker p {
+    font-family: "roboto_light";
+    font-size: 1.07vw;
+    line-height: 1.8vw;
+    margin: 3% 0 0 0;
+}
+.dateRichardParker {
+    margin-top: 2%;
+}
+.dateRichardParker span {
+    font-family: "roboto_regular";
+    color: #9a9a9a;
+    font-size: .97vw;
+}
+.iconsfooterRichardParker {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin: 5% 0 0 4%;
+}
+.iconRichPark {
+    align-self: center;
+}
+.iconRichPark img {
+    width: 1.8vw;
+    margin: 3% 1.7% 0 0;  
+}
+.iconRichPark img:hover {
+    cursor: pointer;
+}
+
+/*Лента слайдов*/
+
+.slick-track {
+    display: flex;
+}
+
+/*Стрелки слайдера*/
+.slider {
+    position: relative;
+    
+}
+.slider>.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    background: 0;
+    border: 0;
+    width: 3vw;
+    height: 3vw;
+}
+.slider>.slick-arrow:hover {
+    cursor: pointer;
+    width: 3.3vw;
+    height: 3.3vw;
+}
+/*Стрелка при невозможности нажать, если слайд не бесконечный*/
+
+.slider>.slick-arrow.slick-disabled {
+    opacity: .2;
+    
+} 
+
+.slider>.slick-arrow.slick-prev {
+    left: 24%;
+    background-image: url(images/richPark/leftArrowRichard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.slider>.slick-arrow.slick-next {
+    right: 24%;
+    background-image: url(images/richPark/rightArrowRichard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.sliderItem {
+    opacity: .6;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transform: scale(.8);
+}
+/*Основной слайд  при centerMode: true*/
+.sliderItem.slick-center {
+    opacity: 1;
+     -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0);
+    transform: scale(1);
+}
+
+
+
+
+
+/*Секция Consectetuer*/
+
+.allArticles {
+    display: flex;
+    justify-content: space-around;
+    margin: 8% 15%;
+}
+.articleConsectetuere {
+    border: solid .2vw #e6e6e6;
+    border-radius: 0.2vw;
+    width: 20.9vw;
+}
+.articleConsectetuere h3 {
+    font-family: "roboto_regular";
+    font-size: 1.25vw;
+    font-weight: 100;
+    color: #7954b6;
+    padding-top: 5%;
+}
+.articleConsectetuere h4 {
+    font-family: "roboto_regular";
+    font-size: .85vw;
+    font-weight: 100;
+    color: #7954b6;
+    padding: 7% 0;
+}
+.articleConsectetuere p {
+    font-family: "roboto_light";
+    font-size: .84vw;
+    line-height: 1.8vw;
+    color: #565656;
+}
+.photo {
+    background-size: cover;
+    width: 20.6vw;
+    height: 15vw;
+}
+#photoLeft {
+    background-image: url(images/sectionPhotos/photoLeft.png); 
+}
+#photoCenter {
+    background-image: url(images/sectionPhotos/photoCenter.png);
+}
+#photoRight {
+    background-image: url(images/sectionPhotos/photoRight.png);
+}
+.contantArticle {
+    padding: 7%;
+}
+.contantArticle a {
+     text-decoration: none;
+}
+.btnReadMore {
+    border: solid .1vw #8e5edd;
+    border-radius: 5vw;
+    width: 45%;
+    margin: 5% 0;
+}
+.btnReadMore p {
+    font-family: "roboto_regular";
+    font-size: .85vw;
+    font-weight: 100;
+    color: #8e5edd;
+    text-align: center;
+}
+.btnReadMore:hover {
+    background-color: #8e5edd;
+}
+.btnReadMore:hover>p {
+    color: white;
+}
+
+/*Секция Download*/
+
+.download {
+    background-color: black;
+    background-image: url(images/download/bgDownload.png);
+    background-size: cover;
+    width: 100%;
+    height: 30vw;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.download h2, .download h2+p {
+    color: white;
+}
+.download h2 {
+    margin-bottom: 6%;
+}
+.contantDownload .linePricingPackages {
+    width: 15%;
+    margin: 8% auto;
+}
+.twoBtnsDownload {
+    display: flex;
+    justify-content: space-between;
+}
+.twoBtnsDownload a {
+    width: 44%;  
+}
+.buttonDownload {
+    border: solid .2vw white;
+    border-radius: 5vw;
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .45vw 1.8vw;
+}
+.buttonDownload p {
+    font-family: "open_sans_regular";
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+.buttonDownload img {
+    width: 2vw;
+}
+.buttonDownload:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;  
+}
+.bgContactUs {
+    background-color: #f2f2f6;
+    width: 58%;
+}
+.bgFormFooter {
+    background-color: #ffffff;
+    width: 32%;
+}
+.contactUs {
+    margin: 5% 14% 0 23%;
+    display: flex;
+    flex-direction: column;
+}
+.titleTextFooter h2 {
+    font-size: 2.5vw;
+    font-weight: 100;
+    font-family: "open_sans_light";
+    color: #7954b6;
+    padding: 8% 0 5% 0;
+}
+.titleTextFooter h2+p {
+    font-family: "roboto_light";
+    color: #565656;
+    font-size: 1.1vw;
+    line-height: 1.7vw;
+    padding-bottom: 5%;
+}
+.phoneEmailAddressFooter {
+    padding: 5% 5% 10% 22%;
+    display: flex;
+    flex-direction: column;
+}
+.rowPhEmAddr {
+    display: flex;
+    padding: 0 0 8% 0;
+}
+.imgRowPhEmAddr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 20%;
+}
+.empty {
+    flex-basis: 20%;
+}
+#imgAddress {
+    width: 1.7vw;
+}
+#imgPhone {
+    width: 1.4vw;
+}
+#imgEmail {
+    width: 1.7vw;
+}
+.rowPhEmAddr p {
+    font-family: "open_sans_regular";
+    color: #7954b6;
+    font-size: 1vw;
+    line-height: 1.7vw;
+    text-align: left;
+    flex-basis: 85%;
+}
+.socialIconsFooter {
+    display: flex;
+    width: 70%;
+    padding-top: 15%;
+}
+.contanerImgSocialIcon {
+    flex-basis: 16%;
+}
+.contanerImgSocialIcon:hover {
+    cursor: pointer;
+}
+.socialIconsFooter img {
+    width: 1.7vw;
+}
+
+/*Форма Footer*/
+
+.formFooter {
+    margin: 35% 15% 0 22%; 
+}
+.allFormRow {
+    margin-bottom: 10%;
+    padding-bottom: 2%;
+    border-bottom: solid .15vw #e3e3e3;
+    display: flex;
+    
+}
+.allFormRow p {
+    font-family: "open_sans_regular";
+    color: #565656;
+    font-size: 1vw;
+}
+input, textarea {
+    border: 0;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+.textForm {
+    font-family: "open_sans_regular";
+    color: #8e5edd;
+    font-size: 1.2vw;
+    font-style: italic;
+}
+.btnFooter {
+    background-color: #8e5edd;
+    font-family: "open_sans_regular";
+    font-size: 1.1vw;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    width: 9vw;
+    height: 2.1vw;
+    border-radius: 2vw;
+}
+.btnFooter:hover {
+    background-color: white;
+    color: #8e5edd;
+    border: solid .15vw #8e5edd;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
