@@ -43,8 +43,7 @@ $('.fadeScreenshots').slick({
        mediaVideo.pause();
        $(".iconAndTimeVideo").show();
   }
-});
-    
+});   
 }); 
 
 
