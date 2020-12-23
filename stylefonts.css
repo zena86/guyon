@@ -18,7 +18,6 @@
 	src: url("fonts/open_sans.woff"),
     url("fonts/open_sans.ttf");
 }
-
 @font-face {
 	font-family: "roboto_light";
 	src: url("fonts/roboto_light.woff"),
@@ -29,7 +28,6 @@
 	src: url("fonts/open_sans_semibold.woff"),
     url("fonts/open_sans_semibold.ttf");
 }
-
 @font-face {
 	font-family: "roboto_regular";
 	src: url("fonts/roboto_regular.woff"),
