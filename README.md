@@ -8,7 +8,7 @@ HTML5    |jQuery      |Slick slider  |Brackets       |CSS flexbox
 CSS3     |            |              |Adobe Photoshop|            
 
 
-
+&nbsp;
 ![Screenshort 1](/images/imgreadme/screen-main.png)
 &nbsp;
 
