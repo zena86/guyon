@@ -2,11 +2,11 @@
 
 DEMO [Guyon](https://zena86.github.io/guyon/)
 
-Языки    | Библиотеки |Плагины       | Инструменты   |Прочие      
----------|------------|--------------|---------------|------------
-HTML5    |jQuery      |Slick slider  |Brackets       |CSS flexbox 
-CSS3     |            |              |Adobe Photoshop|            
-
+Языки     | Библиотеки |Плагины       | Инструменты   |Прочие      
+----------|------------|--------------|---------------|------------
+HTML5     |jQuery      |Slick slider  |Brackets       |CSS flexbox 
+CSS3      |            |              |Adobe Photoshop|            
+JavaScript|            |              |               |
 
 &nbsp;
 ![Screenshort 1](/images/imgreadme/screen-main.png)
